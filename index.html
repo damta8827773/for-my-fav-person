@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForMyFavPerson.</title>
+    
+    <link rel="icon" href="assets/icon1.png" type="image/jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="loader-wrapper">
+        <div class="paper-plane">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </div>
+    </div>
+
+    <div id="scroll-progress-bar"></div>
+
+    <nav class="side-nav" id="side-nav"></nav>
+
+    <div class="controls">
+        <button id="lang-btn">🇮🇩 ID</button>
+        <button id="theme-btn">☀️ / 🌙</button>
+    </div>
+
+    <main>
+        <div class="background-effects"></div>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 class="typewriter" data-key="hero_title">Hey, My Fav Person</h1>
+                <p data-key="hero_desc">For Najwa Aidah, the person I love.</p>
+            </div>
+        </section>
+
+        <div class="content-wrapper">
+            
+            <section class="section letter hidden" id="letter">
+                <h2 data-key="letter_title">Semua ini berisi ulang tahun, kenangan, dan lagu untukmu.</h2>
+                <p>
+                    <span data-key="letter_body_1">Hey, Sayang</span><br><br>
+                    <span data-key="letter_body_2">Aku iseng bikin website ini khusus buat kamu. Gak seberapa sih, tapi ini bentuk kecil dari rasa sayang aku. Di sini ada memori kita, lagu favorit, dan harapan-harapan baik buat kamu. Semoga Kamu Suka!.</span><br><br>
+                    <span data-key="letter_signature">For Najwa Aidah,<br>From Damta Noviyan Muhamad Faiz.</span>
+                </p>
+            </section>
+
+            <section class="section hidden" id="countdown-sec">
+                <h2 data-key="countdown_title">Menuju Hari Spesial Kita</h2>
+                <div id="countdown">
+                    <div class="countdown-box"><span id="months">00</span><p data-key="months">Bulan</p></div>
+                    <div class="countdown-box"><span id="days">00</span><p data-key="days">Hari</p></div>
+                    <div class="countdown-box"><span id="hours">00</span><p data-key="hours">Jam</p></div>
+                    <div class="countdown-box"><span id="minutes">00</span><p data-key="minutes">Menit</p></div>
+                    <div class="countdown-box"><span id="seconds">00</span><p data-key="seconds">Detik</p></div>
+                </div>
+            </section>
+
+            <section class="section memory-section hidden" id="memory">
+                <h2 data-key="memory_title">Foto Random</h2>
+                
+                <div class="memory-gallery">
+                    
+                    <div class="memory-card">
+                        <img src="assets/dam1.png" alt="Memory 1">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_1">Random 1</span></h3>
+                            <p data-key="desc_1">Foto dimana kita pertama ketemu..</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam2.png" alt="Memory 2">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_2">Random 2</span></h3>
+                            <p data-key="desc_2">Foto dimana aku jemput kamu dan tiba' dikasih hadiah ultah.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam3.png" alt="Memory 3">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_3">Random 3</span></h3>
+                            <p data-key="desc_3">Foto nongkrong(random).</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam4.png" alt="Memory 4">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_4">Random 4</span></h3>
+                            <p data-key="desc_4">Foto dimana kita ke Ancol ber-4 sama dapi & lestari.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam5.png" alt="Memory 5">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_5">Random 5</span></h3>
+                            <p data-key="desc_5">Foto pertama aku didatengin pas wisuda.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam6.png" alt="Memory 6">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_6">Random 6</span></h3>
+                            <p data-key="desc_6">Foto dimana aku first time surprise girlfriend.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card mini-slider-card">
+                        <div class="internal-slider" id="slider-7">
+                            <img src="assets/dam7(1).png" class="slide-img active" alt="Slide 7-1">
+                            <img src="assets/dam7(2).png" class="slide-img" alt="Slide 7-2"> 
+                            <img src="assets/dam7(3).png" class="slide-img" alt="Slide 7-3"> 
+                            <img src="assets/dam7(4).png" class="slide-img" alt="Slide 7-4">
+                            <img src="assets/dam7(5).png" class="slide-img" alt="Slide 7-5">
+                        </div>
+                        
+                        <button class="internal-nav prev" onclick="changeInnerSlide('slider-7', -1)">❮</button>
+                        <button class="internal-nav next" onclick="changeInnerSlide('slider-7', 1)">❯</button>
+
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_7">Random 7 </span></h3>
+                            <p data-key="desc_7">Geser untuk lihat foto lainnya.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam8.png" alt="Memory 8">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_8">Random 8</span></h3>
+                            <p data-key="desc_8">Jalan-jalan sore.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam9.png" alt="Memory 9">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_9">Random 9</span></h3>
+                            <p data-key="desc_9">Momen lucu.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card">
+                        <img src="assets/dam10.png" alt="Memory 10">
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_10">Random 10</span></h3>
+                            <p data-key="desc_10">Dinner bareng.</p>
+                        </div>
+                    </div>
+
+                    <div class="memory-card mini-slider-card">
+                        <div class="internal-slider" id="slider-11">
+                            <img src="assets/dam11(1).png" class="slide-img active" alt="Slide 11-1">
+                            <img src="assets/dam11(2).png" class="slide-img" alt="Slide 11-2"> 
+                            <img src="assets/dam11(3).png" class="slide-img" alt="Slide 11-3"> 
+                            <img src="assets/dam11(4).png" class="slide-img" alt="Slide 11-4">
+                            <img src="assets/dam11(5).png" class="slide-img" alt="Slide 11-5">
+                        </div>
+
+                        <button class="internal-nav prev" onclick="changeInnerSlide('slider-11', -1)">❮</button>
+                        <button class="internal-nav next" onclick="changeInnerSlide('slider-11', 1)">❯</button>
+
+                        <div class="overlay">
+                            <h3><span data-key="mem_title_11">Random 11</span></h3>
+                            <p data-key="desc_11">Koleksi selfie kita.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="section hidden" id="words">
+                <h2 data-key="words_title">Words For You.</h2>
+                <div class="carousel">
+                    <div class="carousel-slide active" data-key="quote_1">"[Semangat terus sayangku!!!]"</div>
+                    <div class="carousel-slide" data-key="quote_2">"[Jangan lupa jaga kesehatan.]"</div>
+                    <div class="carousel-slide" data-key="quote_3">"[Aku selalu di sini untukmu.]"</div>
+                    <div class="carousel-slide" data-key="quote_4">"[Always Loving You.]"</div>
+                    <div class="carousel-slide" data-key="quote_5">"[Aku Sayang Kamu.]"</div>
+
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
+                </div>
+            </section>
+
+            <section class="section song-section hidden" id="song">
+                <h2 data-key="song_title">🎵 Lagu Favoritku Untukmu</h2>
+                <div class="spotify-playlist">
+                    <iframe style="border-radius:12px" 
+                            src="https://open.spotify.com/embed/playlist/6oo0wNg4htWN2bWPcTXXSZ?utm_source=generator" 
+                            width="100%" 
+                            height="380" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section id="game-section" class="section hidden">
+                <h2>Catch My Love! 💖</h2>
+                <p>Catch Hearts (💖) & Letters (💌). Avoid Skulls (💀)!</p>
+                <div id="game-container">
+                    <div id="game-ui">Score: <span id="score">0</span></div>
+                    <canvas id="gameCanvas"></canvas>
+                    <div id="game-start-screen">
+                        <h3>Ready to Catch?</h3>
+                        <button class="game-btn" onclick="startGame()">Start Game</button>
+                    </div>
+                    <div id="game-over-screen" class="hidden-screen">
+                        <h3>Game Over!</h3>
+                        <p>Score: <span id="final-score">0</span></p>
+                        <button class="game-btn" onclick="startGame()">Try Again</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <div id="memory-tooltip"></div>
+
+    <button id="love-fab" aria-label="Surprise">
+        <span class="love-fab-icon">💝</span>
+        <span class="love-fab-hint" data-key="fab_hint">Pencet aku!</span>
+    </button>
+    <div id="love-toast"></div>
+
+    <footer>
+        <p data-key="footer_text">© 2025 Created by Damta Noviyan Muhamad Faiz.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

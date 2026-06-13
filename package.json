@@ -1,0 +1,19 @@
+{
+  "name": "formyfavperson",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A polyglot full-stack love letter, built across 8 programming languages.",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint",
+    "manifest": "perl scripts/build-manifest.pl",
+    "svc:go": "cd services/love-api && go run .",
+    "svc:py": "python services/content-api/main.py",
+    "svc:php": "php -S 0.0.0.0:8083 -t services/guestbook-api services/guestbook-api/index.php",
+    "svc:java:build": "cd services/gallery-api && javac Gallery.java",
+    "svc:java": "cd services/gallery-api && java Gallery",
+    "services:win": "powershell -ExecutionPolicy Bypass -File scripts/dev-services.ps1"
+  }
+}
