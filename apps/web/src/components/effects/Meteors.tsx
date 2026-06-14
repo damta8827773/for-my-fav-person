@@ -2,7 +2,7 @@
 
 import { useMemo } from "react";
 
-/** Subtle shooting stars — like little wishes crossing the night. */
+/** Subtle shooting stars - like little wishes crossing the night. */
 export default function Meteors({ count = 14 }: { count?: number }) {
   const meteors = useMemo(
     () =>

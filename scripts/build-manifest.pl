@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-# build-manifest.pl — scans the photo assets and writes a JSON manifest
+# build-manifest.pl - scans the photo assets and writes a JSON manifest
 # (file names, count, total bytes). Used as a small build-time step.
 # Pure core Perl, no CPAN modules.
 use strict;

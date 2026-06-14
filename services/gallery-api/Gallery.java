@@ -1,4 +1,4 @@
-// gallery-api — serves memory/photo metadata as JSON (Java).
+// gallery-api - serves memory/photo metadata as JSON (Java).
 // Uses only the JDK built-in HTTP server. No Maven/Gradle needed.
 // Compile: javac Gallery.java     Run: java Gallery
 import com.sun.net.httpserver.HttpServer;

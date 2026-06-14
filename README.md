@@ -1,6 +1,6 @@
 # For My Fav Person 💖
 
-A polyglot, full-stack love letter for **Najwa Aidah** — built across **8 programming
+A polyglot, full-stack love letter for **Najwa Aidah** - built across **8 programming
 languages**, each with a real job to do. Romantic by design, over-engineered on purpose.
 
 > If a backend service is offline, the site still works: every feature has a graceful
@@ -65,9 +65,9 @@ Generate the asset manifest any time with `pnpm manifest` (Perl).
 
 ## Deploy
 
-The frontend (`apps/web`) deploys to any Next.js host (e.g. Vercel) on its own — the
+The frontend (`apps/web`) deploys to any Next.js host (e.g. Vercel) on its own - the
 fallbacks keep every section working even without the backend services running.
 
 ---
 
-© Damta Noviyan Muhamad Faiz — made with eight languages and one heart.
+© Damta Noviyan Muhamad Faiz - made with eight languages and one heart.

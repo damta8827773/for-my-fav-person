@@ -69,7 +69,7 @@ function MemoryCard({ item }: { item: Memory }) {
       {isAlbum && (
         <>
           <span className="absolute left-3 top-3 rounded-full bg-black/50 px-3 py-1 text-[0.7rem] font-semibold text-white backdrop-blur">
-            {t.album_hint} · {idx + 1}/{item.images.length}
+            {t.album_hint} - {idx + 1}/{item.images.length}
           </span>
           <button
             onClick={() => setIdx((i) => (i - 1 + item.images.length) % item.images.length)}

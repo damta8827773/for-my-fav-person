@@ -25,7 +25,7 @@ export const dict = {
 
     memory_title: "Kepingan Kenangan",
     memory_sub: "Arahkan kursor ke tiap foto.",
-    album_hint: "Album — geser",
+    album_hint: "Album - geser",
 
     words_title: "Kata-Kata Untukmu",
     quotes: [
@@ -97,7 +97,7 @@ export const dict = {
 
     memory_title: "Pieces of Memory",
     memory_sub: "Hover over each photo.",
-    album_hint: "Album — slide",
+    album_hint: "Album - slide",
 
     words_title: "Words For You",
     quotes: [

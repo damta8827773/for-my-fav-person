@@ -1,4 +1,4 @@
-// love-api — the "heart math" microservice.
+// love-api - the "heart math" microservice.
 // Computes the countdown to our special day and serves rotating love quotes.
 // Pure Go standard library, no external dependencies.
 package main

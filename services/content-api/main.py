@@ -1,5 +1,5 @@
 """
-content-api — the "letter of the day" microservice.
+content-api - the "letter of the day" microservice.
 
 Picks a sweet note that stays the same for a given calendar day, so Najwa
 sees one consistent message per day. Pure Python standard library.

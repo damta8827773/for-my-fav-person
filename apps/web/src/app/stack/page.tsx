@@ -17,7 +17,7 @@ const STACK: Item[] = [
   { lang: "Go", emoji: "⚡", tag: "services/love-api", role: { id: "Hitung mundur hari spesial + kutipan cinta.", en: "Special-day countdown stats + love quotes." } },
   { lang: "Python", emoji: "🐍", tag: "services/content-api", role: { id: "Pesan / surat hari ini.", en: "Note / letter of the day." } },
   { lang: "PHP", emoji: "🐘", tag: "services/guestbook-api", role: { id: "API buku tamu (pesan dari Najwa).", en: "Guestbook API (messages from Najwa)." } },
-  { lang: "SQL", emoji: "🗃️", tag: "db/schema.sql · SQLite", role: { id: "Penyimpanan pesan buku tamu.", en: "Persistent storage for guestbook." } },
+  { lang: "SQL", emoji: "🗃️", tag: "db/schema.sql - SQLite", role: { id: "Penyimpanan pesan buku tamu.", en: "Persistent storage for guestbook." } },
   { lang: "Java", emoji: "☕", tag: "services/gallery-api", role: { id: "Metadata galeri / kenangan.", en: "Gallery / memories metadata." } },
   { lang: "Perl", emoji: "🐪", tag: "scripts/build-manifest.pl", role: { id: "Generator manifest aset saat build.", en: "Build-time asset manifest generator." } },
 ];
@@ -37,8 +37,8 @@ export default function StackPage() {
       </h1>
       <p className="mt-3 max-w-2xl text-muted">
         {id
-          ? "Web hadiah ini sengaja dibangun full-stack memakai 8 bahasa pemrograman — tiap bahasa punya peran nyata. Kalau ada service yang mati, situs tetap jalan dengan fallback."
-          : "This gift is intentionally built full-stack across 8 programming languages — each with a real role. If a service is down, the site still works via fallbacks."}
+          ? "Web hadiah ini sengaja dibangun full-stack memakai 8 bahasa pemrograman - tiap bahasa punya peran nyata. Kalau ada service yang mati, situs tetap jalan dengan fallback."
+          : "This gift is intentionally built full-stack across 8 programming languages - each with a real role. If a service is down, the site still works via fallbacks."}
       </p>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-2">

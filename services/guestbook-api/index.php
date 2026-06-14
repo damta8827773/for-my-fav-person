@@ -1,5 +1,5 @@
 <?php
-// guestbook-api — stores Najwa's messages in SQLite (PHP + SQL).
+// guestbook-api - stores Najwa's messages in SQLite (PHP + SQL).
 // Run: php -S 0.0.0.0:8083 index.php
 declare(strict_types=1);
 
@@ -63,7 +63,7 @@ if ($method === 'POST') {
     exit;
 }
 
-// GET — latest 50 entries
+// GET - latest 50 entries
 $rows = $pdo->query('SELECT id, name, message, created_at FROM guestbook ORDER BY id DESC LIMIT 50')
     ->fetchAll(PDO::FETCH_ASSOC);
 echo json_encode($rows);

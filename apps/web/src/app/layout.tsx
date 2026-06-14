@@ -20,9 +20,9 @@ const script = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "For My Fav Person · Najwa Aidah",
+  title: "For My Fav Person - Najwa Aidah",
   description:
-    "Sepucuk surat cinta full-stack untuk Najwa Aidah — dibangun dengan 8 bahasa pemrograman dan satu hati.",
+    "Sepucuk surat cinta full-stack untuk Najwa Aidah - dibangun dengan 8 bahasa pemrograman dan satu hati.",
   icons: { icon: "/assets/icon1.png" },
 };
 
